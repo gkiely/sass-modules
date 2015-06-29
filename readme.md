@@ -40,7 +40,6 @@ Usage
 myapp.html
 ---
 ```html
-
 <div class="Header -home"> 
     <div class="_title"></div>
 </div>
@@ -52,7 +51,6 @@ myapp.html
     <li class="_item"></li>
   </ul>
 </footer>
-
 ```
 
 
@@ -100,6 +98,7 @@ Footer.scss
 
 Text.scss
 ---
+```scss
 %Text {}
 %Text-sml {
   font-size: .6em;
@@ -111,10 +110,12 @@ Text.scss
 %Text-orange {
   color: #e44b23;
 }
+```
 
 
 List.scss
 ---
+```scss
 %List {}
 %List-horiz li {
   display: inline-block;
@@ -124,7 +125,31 @@ List.scss
     content: " | ";
   }
 }
+```
 
+
+
+mixins.scss
+---
+```scss
+/**
+ * module mixin
+ * 
+ * @param  $args...   1st: module name, rest: list of modifiers
+ * @return Placeholders
+ */
+@mixin module($args...){
+  $module: nth($args, 1);
+  
+  @extend %#{$module};
+  @if length($args) > 1{
+    @for $i from 2 through length($args){
+      $item: nth($args, $i);
+      @extend %#{$module}-#{$item};
+    }    
+  }
+}
+```
 
 
 
