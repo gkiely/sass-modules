@@ -39,7 +39,7 @@ Installation
 
 `git clone https://github.com/gkiely/sass-modules.git`
 
-And `import` `module.scss` into your scss stylesheet.
+And import `module.scss` into your scss stylesheet.
 
 
 
