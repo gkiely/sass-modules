@@ -113,7 +113,9 @@ Footer.scss
 Text.scss
 ---
 ```scss
-%Text {}                                     // Module name
+%Text {
+  font-family: 'Open Sans', sans-serif;      // Module name
+}                                     
 
 %Text-sml {                                  // Module property  
   font-size: .6em;
@@ -147,7 +149,7 @@ List.scss
 
 
 
-Please explain
+Explanation
 ---------
 
 `.Header`
