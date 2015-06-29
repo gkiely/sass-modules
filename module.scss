@@ -1,0 +1,18 @@
+/**
+ * module mixin
+ * 
+ * @param  $args...   1st: module name, rest: list of modifiers
+ * @return placeholders
+ */
+@mixin module($args...){
+  $module: nth($args, 1);
+  
+  @extend %#{$module};                            // Extend original module
+
+  @if length($args) > 1{
+    @for $i from 2 through length($args){         
+      $item: nth($args, $i);
+      @extend %#{$module}-#{$item};               // Extend module properties
+    }
+  }
+}

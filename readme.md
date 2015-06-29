@@ -34,7 +34,16 @@ Rules
   - Why: By not nesting, all child classes must be contained to the Section which makes it easy to catch duplicate class names.
 
 
-Usage
+Installation
+----
+
+`git clone https://github.com/gkiely/sass-modules.git`
+
+And import module.scss into your scss stylesheet.
+
+
+
+Example
 -----
 
 myapp.html
@@ -128,31 +137,6 @@ List.scss
 %List-pipe li {
   &:after{
     content: " | ";
-  }
-}
-```
-
-
-
-mixins.scss
----
-```scss
-/**
- * module mixin
- * 
- * @param  $args...   1st: module name, rest: list of modifiers
- * @return placeholders
- */
-@mixin module($args...){
-  $module: nth($args, 1);
-  
-  @extend %#{$module};                            // Extend original module
-
-  @if length($args) > 1{
-    @for $i from 2 through length($args){         
-      $item: nth($args, $i);
-      @extend %#{$module}-#{$item};               // Extend module properties
-    }
   }
 }
 ```
