@@ -157,6 +157,4 @@ Explanation
 - Site section that can be re-used throughout the site. i.e. Header, Footer, Card, ImageSlider
 
 `.-page`
-- A modifier.
-
-<a href="http://viget.com/extend/bem-sass-modifiers" target="_blank">Why this syntax?</a>
+- A modifier. <a href="http://viget.com/extend/bem-sass-modifiers" target="_blank">Why this syntax?</a>
