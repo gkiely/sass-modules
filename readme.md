@@ -41,16 +41,8 @@ myapp.html
 ---
 ```html
 
-<div class="Header -page">
-  <div class="_content">
-    <div class="_logo">
-    </div>
-  </div>
-</div>
-
-<div class="Content">
-  <h1 class="_title"></h1>
-  <p class="_content"></p>
+<div class="Header -home"> 
+    <div class="_title"></div>
 </div>
 
 <footer class="Footer">
@@ -68,23 +60,81 @@ myapp.html
 Header.scss
 ---
 ```scss
-.Header{
+.Header {                                   // Site Section
+
+  // Modifiers
+  //-----------------------
+  &.-home {
+    background: #000;                       // Modifier styles
+  }
+  
+  // Children
+  //-----------------------
+  ._title {
+    @include module(text, title, lge);      // Module styles
+    
+    margin-left: 3px;                       // Specific Styles
+    float: left;                            // Specific Styles
+  }
+}
+```
+
+
+Footer.scss
+---
+```scss
+.Footer {
+  
+  // Children
+  //-----------------------
+  ._linkList {
+    @include module(List, horiz, pipe);     // Module styles
+  }
+  ._item {
+    @include module(Text, orange, sml);     // Module styles
+  }
 }
 ```
 
 
 
-MyModule.scss
+Text.scss
 ---
+%Text {}
+%Text-sml {
+  font-size: .6em;
+}
+%Text-lge {
+  font-size: 1.8em;
+}
+
+%Text-orange {
+  color: #e44b23;
+}
+
+
+List.scss
+---
+%List {}
+%List-horiz li {
+  display: inline-block;
+}
+%List-pipe li {
+  &:after{
+    content: " | ";
+  }
+}
+
+
 
 
 Please explain
 ---------
 
-.Header:
+.Header
 > Site section that can be re-used throughout the site. i.e. Header, Footer, Card, ImageSlider
 
--page
+.-page
 A modifier.
 
 [Why this syntax?](http://viget.com/extend/bem-sass-modifiers)
