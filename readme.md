@@ -113,8 +113,8 @@ Footer.scss
 Text.scss
 ---
 ```scss
-%Text {
-  font-family: 'Open Sans', sans-serif;      // Module name
+%Text {                                      // Module name
+  font-family: 'Open Sans', sans-serif;     
 }                                     
 
 %Text-sml {                                  // Module property  
