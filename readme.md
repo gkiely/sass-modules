@@ -25,13 +25,13 @@ Ethos
 Rules
 ----
 - Modules and Site Sections are capitilized
-  - Why? They get their own files, which makes it easy to identify and navigate your file
+  - Why: They get their own files, which makes it easy to identify and navigate your file
 - Child classes are prefixed with a _
-  - Why? It prevents clashing and having to create `crazyLongUniqueClassNames`
+  - Why: It prevents clashing and having to create `crazyLongUniqueClassNames`
 - One css class per element, as many modifiers as you fancy
-  - Why? It's clean, simple, and fun.
+  - Why: It's clean, simple, and fun.
 - You cannot nest Sections
-  - Why? By not nesting, all child classes must be contained to the Section which makes it easy to catch duplicate class names.
+  - Why: By not nesting, all child classes must be contained to the Section which makes it easy to catch duplicate class names.
 
 
 Usage
