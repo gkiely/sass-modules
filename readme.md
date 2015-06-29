@@ -48,7 +48,8 @@ Example
 
 myapp.html
 ---
-```html<div class="Header -home"> 
+```html
+<div class="Header -home"> 
     <div class="_title">Page title</div>
 </div>
 
@@ -58,7 +59,8 @@ myapp.html
     <li class="_item"></li>
     <li class="_item"></li>
   </ul>
-</footer>```
+</footer>
+```
 
 
 
