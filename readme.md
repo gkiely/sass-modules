@@ -1,10 +1,9 @@
 Sassy Modules
 =======
 
-`sassy-modules` is the holy grail of cascading styles sheets.
+`sassy-modules` allows you to create reusable sass/scss modules.
 
 Get ready to:
-- Enjoy writing css again
 - Create clean, semantic class names
 - Deliver gorgeously reusable code that will make your friends & family envy your greatness
 - Produce efficient css
