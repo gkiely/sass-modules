@@ -16,7 +16,9 @@ And
 Ethos
 ----
 > Importing a module should never output code
+
 > Creating CSS class names should be simple and fun
+
 > Modular code is reusable code
 
 
