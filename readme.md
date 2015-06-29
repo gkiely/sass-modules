@@ -1,7 +1,7 @@
-Sass Modules
+Sassy Modules
 =======
 
-`sass-modules` is the holy grail of cascading styles sheets.
+`sassy-modules` is the holy grail of cascading styles sheets.
 
 Get ready to:
 - Enjoy writing css again
@@ -26,7 +26,7 @@ Rules
 ----
 - Modules and Site Sections are capitilized
   - Why: They get their own files, which makes it easy to identify and navigate your file
-- Child classes are prefixed with a _
+- Child classes are prefixed with a `_`
   - Why: It prevents clashing and having to create `crazyLongUniqueClassNames`
 - One css class per element, as many modifiers as you fancy
   - Why: It's clean, simple, and fun.
