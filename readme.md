@@ -77,7 +77,7 @@ Header.scss
   // Children
   //-----------------------
   ._title {
-    @include module(text, title, lge);      // Module styles
+    @include module(Text, title, lge);      // Module styles
     
     margin-left: 3px;                       // Specific styles
     float: left;                            // Specific styles
