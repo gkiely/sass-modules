@@ -38,7 +38,7 @@ Installation
 
 `git clone https://github.com/gkiely/sass-modules.git`
 
-And import `module.scss` into your scss stylesheet.
+And import `module.scss` in your scss/sass stylesheet.
 
 
 
@@ -135,12 +135,14 @@ List.scss
 ```scss
 %List {}                                      // Module name
 
-%List-horiz li {                              // Module property  
-  display: inline-block;
+%List-horiz {                                 // Module property  
+  li {
+    display: inline-block;
+  }
 }
 
-%List-pipe li {                               // Module property  
-  &:after{
+%List-pipe {                                   // Module property  
+  li:after {
     content: " | ";
   }
 }
