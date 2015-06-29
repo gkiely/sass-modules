@@ -146,11 +146,10 @@ List.scss
 Please explain
 ---------
 
-.Header
-> Site section that can be re-used throughout the site. i.e. Header, Footer, Card, ImageSlider
+`.Header`
+- Site section that can be re-used throughout the site. i.e. Header, Footer, Card, ImageSlider
 
-.-page
-A modifier.
+`.-page`
+- A modifier.
 
-[Why this syntax?](http://viget.com/extend/bem-sass-modifiers)
-
+<a href="http://viget.com/extend/bem-sass-modifiers" target="_blank">Why this syntax?</a>
