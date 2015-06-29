@@ -67,7 +67,7 @@ myapp.html
 Header.scss
 ---
 ```scss
-.Header {                                   // Site Section
+.Header {                                   // Site section
 
   // Modifiers
   //-----------------------
@@ -90,7 +90,7 @@ Header.scss
 Footer.scss
 ---
 ```scss
-.Footer {
+.Footer {                                   // Site section
   
   // Children
   //-----------------------
@@ -113,15 +113,17 @@ Footer.scss
 Text.scss
 ---
 ```scss
-%Text {}
-%Text-sml {
+%Text {}                                     // Module name
+
+%Text-sml {                                  // Module property  
   font-size: .6em;
 }
-%Text-lge {
+
+%Text-lge {                                  // Module property  
   font-size: 1.8em;
 }
 
-%Text-orange {
+%Text-orange {                               // Module property  
   color: #e44b23;
 }
 ```
@@ -130,11 +132,13 @@ Text.scss
 List.scss
 ---
 ```scss
-%List {}
-%List-horiz li {
+%List {}                                      // Module name
+
+%List-horiz li {                              // Module property  
   display: inline-block;
 }
-%List-pipe li {
+
+%List-pipe li {                               // Module property  
   &:after{
     content: " | ";
   }
