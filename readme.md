@@ -41,7 +41,7 @@ myapp.html
 ---
 ```html
 <div class="Header -home"> 
-    <div class="_title"></div>
+    <div class="_title">Page title</div>
 </div>
 
 <footer class="Footer">
@@ -71,8 +71,8 @@ Header.scss
   ._title {
     @include module(text, title, lge);      // Module styles
     
-    margin-left: 3px;                       // Specific Styles
-    float: left;                            // Specific Styles
+    margin-left: 3px;                       // Specific styles
+    float: left;                            // Specific styles
   }
 }
 ```
@@ -87,9 +87,14 @@ Footer.scss
   //-----------------------
   ._linkList {
     @include module(List, horiz, pipe);     // Module styles
+
+    padding-top: .625em;                    // Specific styles
+    border: 1px #ccc dashed;                // Specific styles
   }
   ._item {
     @include module(Text, orange, sml);     // Module styles
+
+    margin-left: 1.25em;                    // Specific styles
   }
 }
 ```
@@ -136,17 +141,18 @@ mixins.scss
  * module mixin
  * 
  * @param  $args...   1st: module name, rest: list of modifiers
- * @return Placeholders
+ * @return placeholders
  */
 @mixin module($args...){
   $module: nth($args, 1);
   
-  @extend %#{$module};
+  @extend %#{$module};                            // Extend original module
+
   @if length($args) > 1{
-    @for $i from 2 through length($args){
+    @for $i from 2 through length($args){         
       $item: nth($args, $i);
-      @extend %#{$module}-#{$item};
-    }    
+      @extend %#{$module}-#{$item};               // Extend module properties
+    }
   }
 }
 ```
