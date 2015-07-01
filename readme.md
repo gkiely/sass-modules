@@ -3,34 +3,31 @@ Sassy Modules
 
 `sassy-modules` allows you to create reusable sass/scss modules.
 
-Get ready to:
-- Create clean, semantic class names
-- Deliver gorgeously reusable code that will make your friends & family envy your greatness
-- Produce efficient css
+Turn this:
 
-And
- - Navigate your code like a Caribbean Pirate
+```scss
+.heading-title {
+  font-size: 2.25em;
+  line-height: 1.2;
+  color: #333;
+  font-weight: bold;
+  padding-bottom: .3em;
+  border-bottom: 1px solid #eee;
+}
+```
 
-
-Ethos
-----
-> Importing a module should never output code
-
-> Creating CSS class names should be simple and fun
-
-> Modular code is reusable code
+Into this:
+```scss
+.heading-title{
+  @include module(Heading, title, lge, border);
+}
+```
 
 
 Rules
 ----
-- Modules and Site Sections are capitilized
-  - Why: They get their own files, which makes it easy to identify and navigate your file
-- Child classes are prefixed with a `_`
-  - Why: It prevents clashing and having to create `crazyLongUniqueClassNames`
-- One css class per element, as many modifiers as you fancy
-  - Why: It's clean, simple, and fun.
-- You cannot nest Sections
-  - Why: By not nesting, all child classes must be contained to the Section which makes it easy to catch duplicate class names.
+- All modules should be created with placeholders. ><a href="http://thesassway.com/intermediate/a-standard-module-definition-for-sass#a-module-is-a-unit-of-code-contained-in-a-partial">(Importing a module should never output code)</a>
+- The module name should be named with an uppercase for readability.
 
 
 Installation
@@ -45,116 +42,4 @@ And import `module.scss` in your scss/sass stylesheet.
 Example
 -----
 
-myapp.html
----
-```html
-<div class="Header -home"> 
-    <div class="_title">Page title</div>
-</div>
-
-<footer class="Footer">
-  <ul class="_linkList">
-    <li class="_item"></li>
-    <li class="_item"></li>
-    <li class="_item"></li>
-  </ul>
-</footer>
-```
-
-
-
-Header.scss
----
-```scss
-.Header {                                   // Site section
-
-  // Modifiers
-  //-----------------------
-  &.-home {
-    background: #000;                       // Modifier styles
-  }
-  
-  // Children
-  //-----------------------
-  ._title {
-    @include module(Text, title, lge);      // Module styles
-    
-    margin-left: 3px;                       // Specific styles
-    float: left;                            // Specific styles
-  }
-}
-```
-
-
-Footer.scss
----
-```scss
-.Footer {                                   // Site section
-  
-  // Children
-  //-----------------------
-  ._linkList {
-    @include module(List, horiz, pipe);     // Module styles
-
-    padding-top: .625em;                    // Specific styles
-    border: 1px #ccc dashed;                // Specific styles
-  }
-  ._item {
-    @include module(Text, orange, sml);     // Module styles
-
-    margin-left: 1.25em;                    // Specific styles
-  }
-}
-```
-
-
-
-Text.scss
----
-```scss
-%Text {                                      // Module name
-  font-family: 'Open Sans', sans-serif;     
-}                                     
-
-%Text-sml {                                  // Module property  
-  font-size: .6em;
-}
-
-%Text-lge {                                  // Module property  
-  font-size: 1.8em;
-}
-
-%Text-orange {                               // Module property  
-  color: #e44b23;
-}
-```
-
-
-List.scss
----
-```scss
-%List {}                                      // Module name
-
-%List-horiz {                                 // Module property  
-  li {
-    display: inline-block;
-  }
-}
-
-%List-pipe {                                   // Module property  
-  li:after {
-    content: " | ";
-  }
-}
-```
-
-
-
-Explanation
----------
-
-`.Header`
-- Site section that can be re-used throughout the site. i.e. Header, Footer, Card, ImageSlider
-
-`.-page`
-- A modifier. <a href="http://viget.com/extend/bem-sass-modifiers" target="_blank">Why this syntax?</a>
+Coming soon.
