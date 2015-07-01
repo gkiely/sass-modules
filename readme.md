@@ -27,7 +27,7 @@ Into this:
 Guidelines
 ----
 - Modules need to be created with placeholders. 
-  <a href="http://thesassway.com/intermediate/a-standard-module-definition-for-sass#a-module-is-a-unit-of-code-contained-in-a-partial">(Importing a module should never output code)</a>]
+  <a href="http://thesassway.com/intermediate/a-standard-module-definition-for-sass#a-module-is-a-unit-of-code-contained-in-a-partial" target="_blank">(Importing a module should never output code)</a>]
 - The first argument is the module name, the following args are the module properties. E.g. `@include module(MyModule, my-prop-1, my-prop-2)`.
 
 
