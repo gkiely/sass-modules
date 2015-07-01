@@ -1,7 +1,7 @@
 /**
  * module mixin
  * 
- * @param  $args...   1st: module name, rest: list of modifiers
+ * @params 1st: module name, rest: list of module properties
  * @return placeholders
  */
 @mixin module($args...){
