@@ -19,7 +19,7 @@ Turn this:
 Into this:
 ```scss
 .heading-title{
-  @include module(Heading, title, lge, border);
+  @include module(Text, title, lge, border);
 }
 ```
 
