@@ -27,7 +27,7 @@ Into this:
 Getting started
 ----
 
-`git clone https://github.com/gkiely/sass-modules.git`
+`git clone https://github.com/gkiely/sassy-modules.git`
 
 And import `module.scss` in your scss/sass stylesheet.
 
@@ -40,9 +40,6 @@ Guidelines
 ```scss
 @include module(My-module, property-one, property-two)
 ```
-
-
-
 
 
 Example
