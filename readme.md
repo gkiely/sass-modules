@@ -1,7 +1,7 @@
 Sassy Modules
 =======
 
-`sassy-modules` allows you to create reusable sass/scss modules.
+`sassy-modules` lets you to create reusable and customisable sass/scss modules.
 
 Turn this:
 
@@ -29,7 +29,7 @@ Getting started
 
 `git clone https://github.com/gkiely/sassy-modules.git`
 
-And import `module.scss` in your scss/sass stylesheet.
+And import `module.scss` in your scss stylesheet.
 
 
 Guidelines

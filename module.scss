@@ -7,7 +7,7 @@
 @mixin module($args...){
   $module: nth($args, 1);
   
-  @extend %#{$module};                            // Extend original module
+  @extend %#{$module};                            // Extend module
 
   @if length($args) > 1{
     @for $i from 2 through length($args){         

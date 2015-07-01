@@ -1,0 +1,14 @@
+/**
+ * @mixin: module
+ * 
+ * @params 1st: module name, rest: module properties
+ * @return placeholders
+ */
+=module($args...)
+  $module: nth($args, 1)
+  @extend %#{$module}                          // Extend module
+
+  @if length($args) > 1
+    @for $i from 2 through length($args)
+      $item: nth($args, $i)
+      @extend %#{$module}-#{$item}             // Extend module properties
