@@ -1,7 +1,7 @@
 /**
  * @mixin: module
  * 
- * @params 1st: module name, rest: list of module properties
+ * @params 1st: module name, rest: module properties
  * @return placeholders
  */
 @mixin module($args...){
