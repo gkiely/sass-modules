@@ -26,7 +26,8 @@ Into this:
 
 Rules
 ----
-- All modules should be created with placeholders. ><a href="http://thesassway.com/intermediate/a-standard-module-definition-for-sass#a-module-is-a-unit-of-code-contained-in-a-partial">(Importing a module should never output code)</a>
+- All modules should be created with placeholders. 
+  > <a href="http://thesassway.com/intermediate/a-standard-module-definition-for-sass#a-module-is-a-unit-of-code-contained-in-a-partial">(Importing a module should never output code)</a>
 - The module name should be named with an uppercase for readability.
 
 
