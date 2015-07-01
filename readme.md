@@ -34,7 +34,7 @@ Guidelines
 Getting started
 ----
 
-`git clone https://github.com/gkiely/sass-modules.git`
+```shgit clone https://github.com/gkiely/sass-modules.git```
 
 And import `module.scss` in your scss/sass stylesheet.
 
