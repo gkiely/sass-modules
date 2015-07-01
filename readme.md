@@ -34,7 +34,7 @@ And import `module.scss` in your scss/sass stylesheet.
 
 Guidelines
 ----
-- Modules need to be created with placeholders.
+- Modules are created with placeholders.
 - The first argument is the module name, the following args are the module properties. *(Naming convention is optional)*.
 ```scss
 @include module(My-module, property-one, property-two)
