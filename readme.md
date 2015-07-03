@@ -1,7 +1,7 @@
-Sassy Modules
+Sass Modules
 =======
 
-`sassy-modules` lets you to create reusable and customisable Sass modules.
+`sass-modules` lets you to create reusable and customisable Sass modules.
 
 Turn this:
 
