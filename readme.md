@@ -43,14 +43,14 @@ Guidelines
 
 Example
 -----
-`style.scss`
+style.scss
 ```scss
 .my-heading{
   @include module(Text, med, orange);
 }
 ```
 
-`Text.scss`
+Text.scss
 ```scss
 %Text{
   font-family: 'Open sans', sans-serif;
