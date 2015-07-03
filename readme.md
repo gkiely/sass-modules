@@ -48,6 +48,12 @@ style.scss
 .my-heading{
   @include module(Text, med, orange);
 }
+.my-list{
+  @include module(List, nav);
+  li{
+    @include(List, pipe);
+  }
+}
 ```
 
 Text.scss
@@ -62,5 +68,23 @@ Text.scss
 
 %Text-orange{
   color: orange;
+}
+```
+
+List.scss
+```scss
+%List{}
+
+%List-nav{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+%List-pipe{
+  &:after{
+    content: " | ";
+  }
 }
 ```
