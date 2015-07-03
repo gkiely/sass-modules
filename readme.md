@@ -49,9 +49,9 @@ style.scss
   @include module(Text, med, orange);
 }
 .my-list{
-  @include module(List, nav);
+  @include module(List, reset);
   li{
-    @include module(List, pipe);
+    @include module(List, inline, pipe);
   }
 }
 ```
@@ -75,11 +75,14 @@ List.scss
 ```scss
 %List{}
 
-%List-nav{
-  display: inline-block;
+%List-reset{
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+%List-inline{
+  display: inline-block;
 }
 
 %List-pipe{
