@@ -51,7 +51,7 @@ style.scss
 .my-list{
   @include module(List, nav);
   li{
-    @include(List, seperator);
+    @include module(List, pipe);
   }
 }
 ```
@@ -82,7 +82,7 @@ List.scss
   list-style-type: none;
 }
 
-%List-seperator{
+%List-pipe{
   &:after{
     content: " | ";
   }
