@@ -1,8 +1,6 @@
 Sass Modules
 =======
 
-`sass-modules` lets you to create reusable and customisable Sass modules.
-
 Turn this:
 
 ```scss
@@ -23,13 +21,19 @@ Into this:
 }
 ```
 
+`sass-modules` lets you to create reusable and customisable Sass modules.
+
 
 Getting started
 ----
 
-`git clone https://github.com/gkiely/sassy-modules.git`
+`git clone https://github.com/gkiely/sassy-modules.git` 
 
 And import `module.scss` in your Sass file.
+
+OR
+--
+copy the module.scss mixin into your project.
 
 
 Guidelines
@@ -56,7 +60,7 @@ style.scss
 }
 ```
 
-Text.scss
+Text.scss (module file)
 ```scss
 %Text{
   font-family: 'Open sans', sans-serif;
@@ -71,7 +75,7 @@ Text.scss
 }
 ```
 
-List.scss
+List.scss (module file)
 ```scss
 %List{}
 
