@@ -63,7 +63,7 @@ style.scss
 Text.scss (module file)
 ```scss
 %Text{
-  font-family: 'Open sans', sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 %Text-med{
