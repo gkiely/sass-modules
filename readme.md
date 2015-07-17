@@ -21,7 +21,7 @@ Into this:
 }
 ```
 
-`sass-modules` lets you to create reusable and customisable Sass modules.
+Sass-modules lets you to create reusable and customisable Sass modules.
 
 
 Getting started
@@ -33,7 +33,7 @@ And import `module.scss` in your Sass file.
 
 OR
 
-copy the module.scss mixin into your project.
+Copy the module.scss mixin into your project.
 
 
 Guidelines
