@@ -32,7 +32,7 @@ Getting started
 And import `module.scss` in your Sass file.
 
 OR
---
+
 copy the module.scss mixin into your project.
 
 
