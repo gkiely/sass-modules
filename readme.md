@@ -24,7 +24,7 @@ Into this:
 Sass-modules lets you to create reusable and customisable Sass modules.
 
 
-Getting started
+Get started
 ----
 
 `git clone https://github.com/gkiely/sassy-modules.git` 
@@ -38,11 +38,11 @@ Copy the module.scss mixin into your project.
 
 Guidelines
 ----
-- Modules are created with placeholders.
 - The first argument is the module name, the following args are the module properties. *(Naming convention is optional)*.
 ```scss
 @include module(MyModule, propertyOne, propertyTwo)
 ```
+- Create Modules with Sass placeholders.
 
 
 Example
