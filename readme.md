@@ -27,7 +27,7 @@ Sass-modules lets you to create reusable and customisable Sass modules.
 1. Get it
 ----
 
-`git clone https://github.com/gkiely/sassy-modules.git` 
+`git clone https://github.com/gkiely/sass-modules.git` 
 
 And import `module.scss` in your Sass file.
 
