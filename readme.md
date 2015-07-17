@@ -62,7 +62,7 @@ Use your module
 
 
 
-Full Example
+Complete Example
 -----
 style.scss
 ```scss
