@@ -1,6 +1,5 @@
 Sass Modules
 =======
-> Importing a module should never output code
 
 Turn this:
 
@@ -40,6 +39,7 @@ Copy the module.scss mixin into your project.
 
 2. Make a module
 ----
+- Importing a module should never output code
 - Create Modules with Sass placeholders.
 - Create child modules using Parent-child syntax
 
