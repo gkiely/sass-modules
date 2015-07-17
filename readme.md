@@ -24,7 +24,7 @@ Into this:
 Sass-modules lets you to create reusable and customisable Sass modules.
 
 
-Get started
+1. Get started
 ----
 
 `git clone https://github.com/gkiely/sassy-modules.git` 
@@ -37,7 +37,7 @@ Copy the module.scss mixin into your project.
 
 
 
-Make a module
+2. Make a module
 ----
 - Create Modules with Sass placeholders.
 - Create child modules using Parent-child
@@ -52,7 +52,7 @@ Make a module
 ```
 
 
-Use your module
+3. Use your module
 ----
 - The first argument is the module name, the following args are the module children. *(Naming convention is optional)*.
 ```scss
