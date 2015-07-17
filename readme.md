@@ -40,7 +40,7 @@ Copy the module.scss mixin into your project.
 2. Make a module
 ----
 - Create Modules with Sass placeholders.
-- Create child modules using Parent-child
+- Create child modules using Parent-child syntax
 
 ```scss
 %Text{
@@ -54,7 +54,7 @@ Copy the module.scss mixin into your project.
 
 3. Use your module
 ----
-- The first argument is the module name, the following args are the module children. *(Naming convention is optional)*.
+- The first argument is the module name, the following args are the module children.
 ```scss
 @include module(Text, title);
 ```
