@@ -64,19 +64,6 @@ Copy the module.scss mixin into your project.
 
 Complete Example
 -----
-style.scss
-```scss
-.my-heading{
-  @include module(Text, med, orange);
-}
-.my-list{
-  @include module(List, reset);
-  li{
-    @include module(List, inline, pipe);
-  }
-}
-```
-
 Text.scss (module file)
 ```scss
 %Text{
@@ -109,6 +96,19 @@ List.scss (module file)
 %List-pipe{
   &:after{
     content: " | ";
+  }
+}
+```
+
+style.scss
+```scss
+.my-heading{
+  @include module(Text, med, orange);
+}
+.my-list{
+  @include module(List, reset);
+  li{
+    @include module(List, inline, pipe);
   }
 }
 ```
