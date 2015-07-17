@@ -54,7 +54,7 @@ Copy the module.scss mixin into your project.
 
 3. Use your module
 ----
-- The first argument is the module name, the following arguments are the module children.
+- The first argument is the module name, the following arguments are the module children, you can mix & match the children however you see fit.
 ```scss
 @include module(Text, title);
 ```
