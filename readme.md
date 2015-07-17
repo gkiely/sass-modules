@@ -36,16 +36,33 @@ OR
 Copy the module.scss mixin into your project.
 
 
-Guidelines
+
+Make a module
 ----
-- The first argument is the module name, the following args are the module properties. *(Naming convention is optional)*.
-```scss
-@include module(MyModule, propertyOne, propertyTwo)
-```
 - Create Modules with Sass placeholders.
+- Create child modules using Parent-child
+
+```scss
+%Text{
+  font-size: 1em;
+}
+%Text-title{
+  font-weight: bold;
+}
+```
 
 
-Example
+Use your module
+----
+- The first argument is the module name, the following args are the module children. *(Naming convention is optional)*.
+```scss
+@include module(Text, title);
+```
+
+
+
+
+Full Example
 -----
 style.scss
 ```scss
