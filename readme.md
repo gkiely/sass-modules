@@ -24,7 +24,7 @@ Into this:
 Sass-modules lets you to create reusable and customisable Sass modules.
 
 
-1. Get started
+1. Get it
 ----
 
 `git clone https://github.com/gkiely/sassy-modules.git` 
