@@ -1,5 +1,6 @@
 Sass Modules
 =======
+> Importing a module should never output code
 
 Turn this:
 
