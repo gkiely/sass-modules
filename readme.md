@@ -24,7 +24,7 @@ Into this:
 Sass-modules lets you to create reusable and customisable Sass modules.
 
 
-1. Get it
+Get it
 ----
 
 `git clone https://github.com/gkiely/sass-modules.git` 
@@ -37,7 +37,7 @@ Copy the module.scss mixin into your project.
 
 
 
-2. Make a module
+Create a module
 ----
 - Importing a module should never output code
 - Create Modules with Sass placeholders.
@@ -53,11 +53,13 @@ Copy the module.scss mixin into your project.
 ```
 
 
-3. Use your module
+Use it!
 ----
-- The first argument is the module name, the following arguments are the module children.
+- The first argument is the module name, the following arguments are the module's modifiers.
 ```scss
-@include module(Text, title);
+.h1{
+  @include module(Text, title);
+}
 ```
 
 
